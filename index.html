@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedLearn</title>
+    <link rel="stylesheet" href="../MedLearnG5/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Encabezado">
+        <div class="Titulo">
+            <img src="../MedLearnG5/imagenes/icono.png" alt="MedLearn Icon" class="icon">
+            <h1>MedLearn</h1>  
+        </div>
+        <ul class="MenuHorizontal">
+            <li><a href="#feature">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+        <button class="boton" id="loginBtn">Log in</button>       
+        <button class="boton" id="signInBtn">Sign in</button>
+    </div>
+    <div class="Cuerpo">
+        <img src="../MedLearnG5/imagenes/tocar.png" alt="MedLearn Video" class="icon-video">
+        <h2>Conoce, comprende y vive mejor</h2>
+        <button class="botonC">Únete hoy</button> 
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <div class="input-container">
+                    <input type="email" placeholder="Email" required>
+                    <i class="icon email-icon"></i>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class="icon password-icon"></i>
+                </div>
+                <div class="remember">
+                    <label>
+                        <input type="checkbox"> Recordar
+                    </label>
+                    <a href="#">Olvidé la contraseña</a>
+                </div>
+                <button type="submit">Acceder</button>
+                <p>No tengo Cuenta <a href="#" id="createAccountLink">Crear una</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <h2>Registro</h2>
+            <form>
+                <div class="input-container">
+                    <input type="text" placeholder="Nombre" required>
+                    <i class="icon name-icon"></i>
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <i class="icon email-icon"></i>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class="icon password-icon"></i>
+                </div>
+                <button type="submit">Registrarse</button>
+                <p>¿Ya tienes una cuenta? <a href="#" id="loginLink">Inicia sesión</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="../MedLearnG5/js/script.js"></script>
+    <!--Inicio de feature-->
+
+    <nav class="Feature" id="feature">
+        <h2> ¡Únete a nuestra comunidad de aprendizaje sobre salud y patologías en MedLearn!</h2>
+        <div class="contenedor"><!--COntenenedor general de los box verde-->
+            <div class="box-verde">
+                <h3>¿Que buscamos?</h3>
+                <p>En MedLearn, nuestro principal objetivo es servir como una herramienta 
+                    educativa para brindarte información detallada y precisa sobre una amplia variedad de enfermedades y patologías. 
+                    Nos esforzamos por ser una fuente confiable que te ayude a comprender mejor las condiciones de salud que puedas enfrentar.</p>
+                    <button class="botonC2">Aprender más</button>
+            </div>
+            <div class="box-verde">
+                <h3>Características principales</h3>
+                <p>Amplia base de datos de enfermedades.
+                    Descripciones detalladas de síntomas, diagnóstico y tratamientos.
+                    Artículos y recursos actualizados por profesionales de la salud.</p>
+                    <button class="botonC2">Aprender más</button>
+            </div>
+            <div class="box-verde">
+                <h3>Nuestra misión</h3>
+                <p>Nuestra misión se centra en proporcionar descripciones exhaustivas de síntomas, diagnósticos
+                     y tratamientos para que puedas estar informado y tomar decisiones informadas sobre tu bienestar. 
+                     Contamos con una extensa base de datos respaldada por profesionales
+                     de la salud, lo que garantiza la calidad y veracidad de la información que ofrecemos.</p>
+                    <button class="botonC2">Aprender más</button>
+            </div>
+            <div class="box-verde">
+                <h3>¿Por qué elegir MedLearn?</h3>
+                <p>Al elegir MedLearn, optas por acceder a información actualizada y relevante en un formato fácil 
+                    de entender y utilizar. Nuestra interfaz amigable te permite navegar sin complicaciones
+                     a través de los diferentes contenidos, asegurando que tu experiencia de aprendizaje sobre
+                      patologías sea enriquecedora y satisfactoria.</p>
+                    <button class="botonC2">Aprender más</button>
+            </div>  
+
+
+        </div>
+
+        
+    </nav>
+    <nav class="QueOfrecemos">
+        <div class="imgQueOfrecemos">
+            <img src="../MedLearnG5/imagenes/imgQueOfrecemos.png" alt="Imagen Que Ofrecemos" class="imagenC2">
+
+        </div>
+        <div class="textC2">
+            <h3>¿Que ofrecemos en MedLearn?</h3>
+            <ul>
+                <li>-Información detallada sobre una amplia gama de enfermedades y condiciones médicas.</li> <br>
+                <li>-Descripciones exhaustivas de síntomas, diagnósticos y opciones de tratamiento.</li> <br>
+                <li>-Artículos actualizados escritos por profesionales de la salud.</li> <br>
+            </ul>
+        </div>
+
+    </nav>
+    <nav class="Beneficios">        
+        <div class="textC2">
+            <h3>Beneficios</h3>
+            <ul>
+                <li>-Acceso a una base de datos confiable respaldada por expertoss.</li> <br>
+                <li>-Aprendizaje sobre tu salud de manera clara y comprensible.</li> <br>
+                <li>-Actualizaciones frecuentes para mantener la información relevante.</li> <br>
+            </ul>
+        </div>
+        <div class="imgBeneficios">
+            <img src="../MedLearnG5/imagenes/imgBeneficios.png" alt="Imagen Beneficios" class="imagenC2">
+        </div>
+
+    </nav>
+    <nav class="redes">
+        
+            <h2> Únete a nuestra comunidad hoy y descubre el mundo de la salud a través de MedLearn</h2> 
+                      
+            <img src="../MedLearnG5/imagenes/facebook.png" alt="facebook" class="iconRedes">
+            <img src="../MedLearnG5/imagenes/gorjeo.png" alt="twiter Icon" class="iconRedes">
+            <img src="../MedLearnG5/imagenes/instagram.png" alt="instagram Icon" class="iconRedes">
+            <img src="../MedLearnG5/imagenes/playstore.png" alt="playstore Icon" class="iconRedes">
+            <img src="../MedLearnG5/imagenes/appstore.png" alt="appstore Icon" class="iconRedes">       
+    </nav>
+    <nav class="Contactenos">
+        <h3>Conocenos y contactanos a traves de nuestros medios de comuncicación</h3>
+        <button class="btn1" id="join">Join Today</button>
+        <button class="btn2" id="contact">Contac Us</button>
+    </nav>
+    <nav class="otros">
+        
+        <div class="MenuOtros">
+            <ul>
+                <li><a href="">Mobile app</a></li>
+                <li><a href="">Comunnty</a></li>
+                <li><a href="">Company</a></li>
+                <div class="nombre">
+                    <img src="../MedLearnG5/imagenes/icono.png" alt="MedLearn Icon" class="icon">
+                    <li class="nombre">MedLearn</li>
+                </div>                
+                <li><a href="">Help desk</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Resources</a></li>
+            </ul> 
+        </div>        
+        <hr>
+        <h4 class="Copyright">© EC.Grupo05</h4>
+    </nav>
+    
+    
+</body>
+</html>
